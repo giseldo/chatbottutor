@@ -1,16 +1,14 @@
-Adding variety
+# https://campus.datacamp.com/courses/building-chatbots-in-python/chatbots-101?ex=6
+# Adding variety
 
-It can get a little boring hearing the same old answers over and over. In this exercise, you'll add some variation. If you ask your bot how it's feeling, the likelihood that it responds with "oh I'm great!" or "I'm very sad today" should be equal.
+# It can get a little boring hearing the same old answers over and over. In this exercise, you'll add some variation. If you ask your bot how it's feeling, the likelihood that it responds with "oh I'm great!" or "I'm very sad today" should be equal.
+# Here, you'll use the random module - specifically random.choice(ls) - which randomly selects an element from a list ls.
+# A dictionary called responses, which maps each message to a list of possible responses, has been defined for you.
 
-Here, you'll use the random module - specifically random.choice(ls) - which randomly selects an element from a list ls.
-
-A dictionary called responses, which maps each message to a list of possible responses, has been defined for you.
-
-Instructions 1
-
-    Import the random module.
-    If the message is in responses, use random.choice() in the respond() function to choose a random matching response.
-    If the message is not in responses, choose a random default response.
+# Instructions 1
+# Import the random module.
+# If the message is in responses, use random.choice() in the respond() function to choose a random matching response.
+# If the message is not in responses, choose a random default response.
 
 
 # Import the random module
