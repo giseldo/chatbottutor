@@ -35,6 +35,7 @@ def ____(____):
         bot_message = ____["____"]
     return bot_message
 
+
 # Define a function that sends a message to the bot: send_message
 def send_message(message):
     # Print user_template including the user_message

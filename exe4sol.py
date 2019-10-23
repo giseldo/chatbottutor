@@ -12,7 +12,7 @@
 
 
 # Import the random module
-____
+import random
 
 # Create templates
 bot_template = "BOT : {0}"
@@ -40,10 +40,10 @@ def respond(message):
     # Check if the message is in the responses
     if message in responses:
         # Return a random matching response
-        bot_message = ____(____[____])
+        bot_message = random.choice(responses[message])
     else:
         # Return a random "default" response
-        bot_message = ____.____(____["____"])
+        bot_message = random.choice(responses["default"])
     return bot_message
 
 

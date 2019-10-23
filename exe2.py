@@ -12,11 +12,13 @@
 bot_template = "BOT : {0}"
 user_template = "USER : {0}"
 
+
 def respond(message):
     # Concatenate the user's message to the end of a standard bot respone
     bot_message = "I can hear you! You said: " + message
     # Return the result
     return bot_message
+
 
 # Define a function that sends a message to the bot: send_message
 def ____(____):
@@ -26,6 +28,7 @@ def ____(____):
     response = ____(____)
     # Print the bot template including the bot's response.
     print(____.format(____))
+
 
 # Send a message to the bot
 send_message("____")
