@@ -1,4 +1,5 @@
-https://campus.datacamp.com/courses/building-chatbots-in-python/
+# https://campus.datacamp.com/courses/building-chatbots-in-python/
+
 # EchoBot I
 # Hello, World!
 # You'll begin learning how to build chatbots in Python by writing two functions to build the simplest bot possible: EchoBot. EchoBot just responds by replying with the same message it receives.
@@ -7,8 +8,6 @@ https://campus.datacamp.com/courses/building-chatbots-in-python/
 # Instructions
 # Write a function called respond() with a single parameter message which returns the bot's response. To do this, concatenate the strings "I can hear you! You said: " and message.
 # Store the concatenated strings in bot_message, and return this result.
-
-
 
 bot_template = "BOT : {0}"
 user_template = "USER : {0}"
