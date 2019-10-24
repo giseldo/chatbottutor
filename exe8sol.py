@@ -2,7 +2,7 @@
 # Now you're going to put everything from the previous exercises together and experience the magic!
 # The match_rule(), send_message(), and replace_pronouns() functions have already been defined,
 # and the rules dictionary is available in your workspace.
-# Your job here is to write a function called respond() with a single argument message which creates an 
+# Your job here is to write a function called respond() with a single argument message which creates an
 # appropriate response to be handled by send_message().
 
 # Instructions
@@ -46,7 +46,7 @@ def match_rule(rules, message):
             if '{0}' in response:
                 phrase = match.group(1)
     # Return the response and phrase
-    return response.format(phrase)
+    return response, phrase
 
 
 # Define replace_pronouns()
@@ -80,12 +80,12 @@ def send_message(message):
 # Define respond()
 def respond(message):
     # Call match_rule
-    ____, ____ = ____
+    response, phrase = match_rule(rules, message)
     if '{0}' in response:
         # Replace the pronouns in the phrase
-        phrase = ____
+        phrase = replace_pronouns(phrase)
         # Include the phrase in the response
-        response = ____
+        response = response.format(phrase)
     return response
 
 # Send the messages
