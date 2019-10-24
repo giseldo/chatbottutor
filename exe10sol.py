@@ -9,6 +9,7 @@
 # If there is a match, return the corresponding intent.
 # Call your match_intent() function inside respond() with message as the argument and
 # then hit 'Submit Answer' to see how the bot responds to the provided messages.
+
 import re
 
 bot_template = "BOT : {0}"
@@ -19,7 +20,6 @@ keywords = {
     'goodbye': ['bye', 'farewell'],
     'thankyou': ['thank', 'thx']
 }
-
 
 responses = {
     'default': 'default message',
@@ -39,16 +39,16 @@ for intent, keys in keywords.items():
 # Define a function to find the intent of a message
 def match_intent(message):
     matched_intent = None
-    for intent, pattern in ____:
-        # Check if the pattern occurs in the message 
-        if ____:
-            matched_intent = ____
+    for intent, pattern in patterns.items():
+        # Check if the pattern occurs in the message
+        if pattern.search(message):
+            matched_intent = intent
     return matched_intent
 
 # Define a respond function
 def respond(message):
     # Call the match_intent function
-    intent = ____
+    intent = match_intent(message)
     # Fall back to the default response
     key = "default"
     if intent in responses:
