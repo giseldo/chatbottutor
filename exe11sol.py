@@ -21,12 +21,12 @@ user_template = "USER : {0}"
 def find_name(message):
     name = None
     # Create a pattern for checking if the keywords occur
-    name_keyword = ____
+    name_keyword = re.compile('(name|call)')
     # Create a pattern for finding capitalized words
-    name_pattern = ____
+    name_pattern = re.compile('[A-Z]{1}[a-z]*')
     if name_keyword.search(message):
         # Get the matching words in the string
-        name_words = ____
+        name_words = name_pattern.findall(message)
         if len(name_words) > 0:
             # Return the name if the keywords are present
             name = ' '.join(name_words)
@@ -36,7 +36,7 @@ def find_name(message):
 # Define respond()
 def respond(message):
     # Find the name
-    name = ____
+    name = find_name(message)
     if name is None:
         return "Hi there!"
     else:
