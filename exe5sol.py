@@ -29,14 +29,13 @@ responses = {   'question': ["I don't know :(", 'you tell me!'],
                             ':)']
              }
 
-
 def respond(message):
     # Check for a question mark
-    if ____:
+    if message.endswith('?'):
         # Return a random question
-        return ____(____["____"])
+        return random.choice(responses["question"])
     # Return a random statement
-    return ____(____["____"])
+    return random.choice(responses["statement"])
 
 
 # Define a function that sends a message to the bot: send_message
