@@ -47,7 +47,7 @@ def match_rule(rules, message):
         match = re.search(pattern, message)
         if match is not None:
             # Choose a random response
-            response = random.choice(rules[pattern])
+            response = random.choice(responses)
             if '{0}' in response:
                 phrase = match.group(1)
     # Return the response and phrase
