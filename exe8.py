@@ -1,15 +1,16 @@
-https://campus.datacamp.com/courses/building-chatbots-in-python/chatbots-101?ex=11
+# https://campus.datacamp.com/courses/building-chatbots-in-python/chatbots-101?ex=11
+# Now you're going to put everything from the previous exercises together and experience the magic! The match_rule(), 
+# send_message(), and replace_pronouns() functions have already been defined, and the rules dictionary is available 
+# in your workspace.
+# Your job here is to write a function called respond() with a single argument message which creates an 
+# appropriate response to be handled by send_message().
 
-Now you're going to put everything from the previous exercises together and experience the magic! The match_rule(), send_message(), and replace_pronouns() functions have already been defined, and the rules dictionary is available in your workspace.
-
-Your job here is to write a function called respond() with a single argument message which creates an appropriate response to be handled by send_message().
-
-
-    Get a response and phrase by calling match_rule() with the rules dictionary and message.
-    Check if the response is a template by seeing if it includes the string '{0}'. If it does:
-        Use the replace_pronouns() function on phrase.
-        Include the phrase by using .format() on response and overriding the value of response.
-    Hit 'Submit Answer' to see how the bot responds to the provided messages!
+# Instructions
+# Get a response and phrase by calling match_rule() with the rules dictionary and message.
+# Check if the response is a template by seeing if it includes the string '{0}'. If it does:
+# Use the replace_pronouns() function on phrase.
+# Include the phrase by using .format() on response and overriding the value of response.
+# Hit 'Submit Answer' to see how the bot responds to the provided messages!
 
 
 # Define respond()
